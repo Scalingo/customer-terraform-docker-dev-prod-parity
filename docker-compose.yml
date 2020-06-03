@@ -1,0 +1,49 @@
+version: "3.3"
+services:
+  java-app:
+    build: jar-on-scalingo
+    environment:
+      PORT: 8080
+      DATABASE_URL: psql://postgres:secret@java-app-postgresql:5432/postgresql
+      INFLUX_URL: http://influx:secret@java-app-influx:8086/
+      INFLUX_DB: influx
+    ports:
+      - "8080:8080"
+    depends_on:
+      - java-app-influx
+      - java-app-postgresql
+      - java-app-redis
+
+  java-app-influx:
+    image: scalingo/influxdb:latest
+    command: /influx
+    environment:
+      DB_USER: "influx"
+      DB_PASSWORD: "secret"
+      DB_ADMIN_PASSWORD: "admin-secret"
+    ports:
+      - "8086:8086"
+    volumes:
+      - /var/lib/influxdb
+
+  java-app-postgresql:
+    image: scalingo/postgresql:12.2.0-6
+    command: /postgresql
+    environment:
+      DB_USER: "postgres"
+      DB_PASSWORD: "secret"
+      DB_ADMIN_PASSWORD: "admin-secret"
+    ports:
+      - "5432:5432"
+    volumes:
+      - /var/lib/postgresql
+
+  java-app-redis:
+    image: scalingo/redis:latest
+    command: /redis
+    environment:
+      DB_PASSWORD: "secret"
+    ports:
+      - "6379:6379"
+    volumes:
+      - /var/lib/redis

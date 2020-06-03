@@ -1,0 +1,7 @@
+#! /bin/bash
+
+export TF_VAR_scalingo_apitoken= YOUR SCALINGO TOKEN HERE
+export TF_VAR_osc_key_id= YOUR OUTSCALE KEY ID HERE
+export TF_VAR_osc_secret_key= YOUR OUTSCALE KEU SECRET HERE
+
+terraform $*

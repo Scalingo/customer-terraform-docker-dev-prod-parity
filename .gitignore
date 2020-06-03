@@ -1,0 +1,38 @@
+java-app/HELP.md
+java-app/target/
+!java-app/.mvn
+!java-app/.mvn/wrapper/maven-wrapper.jar
+!java-app/**/src/main/**
+!java-app/**/src/test/**
+
+### STS ###
+java-app/.apt_generated
+java-app/.classpath
+java-app/.factorypath
+java-app/.project
+java-app/.settings
+java-app/.springBeans
+java-app/.sts4-cache
+
+### IntelliJ IDEA ###
+java-app/.idea
+java-app/*.iws
+java-app/*.iml
+java-app/*.ipr
+
+### NetBeans ###
+java-app/nbproject/private/
+java-app/nbbuild/
+java-app/dist/
+java-app/nbdist/
+java-app/.nb-gradle/
+java-app/build/
+
+### VS Code ###
+java-app/.vscode/
+
+infrastructure/terraform.tfstate
+infrastructure/terraform.tfstate.backup
+infrastructure/.terraform/plugins/darwin_amd64/lock.json
+infrastructure/.vscode/settings.json
+jar-on-scalingo/*.jar
