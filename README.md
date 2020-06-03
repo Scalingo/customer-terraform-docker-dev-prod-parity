@@ -4,7 +4,7 @@
 
 Here is the architecture diagram of the infrastructure:
 
-![architecture diagram](https://i.imgur.com/qcyeOBU.png)
+![architecture diagram](https://i.imgur.com/LyeVCcO.png)
 
 ## Pre-requisite
 
