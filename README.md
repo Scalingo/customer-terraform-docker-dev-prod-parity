@@ -30,3 +30,10 @@
 - Run `make scalingo-and-outscale-provision`, read the output !
 - WIP: Run `make scalingo-and-outscale-up` to deploy the configurations => This step is not finished and needs updating
 
+## Architecture
+
+Here is the architecture diagram of the provisionned architecture:
+
+![architecture diagram](https://i.imgur.com/qcyeOBU.png)
+
+
