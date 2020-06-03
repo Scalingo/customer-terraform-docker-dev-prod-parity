@@ -7,7 +7,7 @@
 - The Scalingo CLI (https://cli.scalingo.com/)
 - Java 1.8 or more
 
-## Run the app:
+## Run the app locally
 
 - Go to the `java-app` directory
 - Run `./mvnw spring-boot:run`
