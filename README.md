@@ -1,5 +1,11 @@
 # Example project with Infra-as-Code and Dev/Prod parity using Scalingo and 3DS Outscale
 
+## Architecture
+
+Here is the architecture diagram of the infrastructure:
+
+![architecture diagram](https://i.imgur.com/qcyeOBU.png)
+
 ## Pre-requisite
 
 - Docker, docker-engine, and docker-compose for the development environment
@@ -29,11 +35,5 @@
 - Go to the project root directory
 - Run `make scalingo-and-outscale-provision`, read the output !
 - WIP: Run `make scalingo-and-outscale-up` to deploy the configurations => This step is not finished and needs updating
-
-## Architecture
-
-Here is the architecture diagram of the provisionned architecture:
-
-![architecture diagram](https://i.imgur.com/qcyeOBU.png)
 
 
